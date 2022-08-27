@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import GameTable from './components/GameTable/GameTable';
+
 
 function App() {
 
@@ -25,7 +27,7 @@ function App() {
     }
     return (
       <div className="App">
-        <h3>Platform By Global Sales in Millions</h3>
+        <GameTable videogames={gameList}/>
   
       </div>
     );
