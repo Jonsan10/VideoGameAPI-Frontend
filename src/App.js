@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import GameTable from './components/GameTable/GameTable';
-import SearchBar from "./Components/SearchBar/SearchBar"; 
+import SearchBar from './components/SearchBar/SearchBar'; 
 
 
 function App() {
