@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import GameTable from './components/GameTable/GameTable';
+import SearchBar from "./Components/SearchBar/SearchBar"; 
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
     return (
       <div className="App">
         <GameTable videogames={gameList}/>
+        <SearchBar videogames={gameList}/>
   
       </div>
     );

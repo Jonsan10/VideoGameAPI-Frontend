@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom"
 
-const NavBar = (props) => {
+const SearchBar = (props) => {
 
     const [searchBar, setSearchBar] = useState('');
     const navigate = useNavigate();
@@ -13,8 +13,12 @@ const NavBar = (props) => {
     
 
     return ( 
-        <div></div>
+        <div>
+            <input className='searchBar' type={'text'} placeholder="searching"
+            value={searchBar} onChange={(e) =>setSearchBar(e.target.value)}/>
+            <button className='searchButton'onClick={handleSubmit}>Search</button>
+        </div>
      );
 }
  
-export default NavBar;
+export default SearchBar;
