@@ -1,3 +1,4 @@
+
 import { Chart } from "react-google-charts"
 
 
@@ -47,8 +48,8 @@ const GameTable = ({videogames}) => {
         <div>
             <h1>
                 Platform By Global Sales in Millions
-                <Chart chartType="ColumnChart" width="100%" height="400px" data={generateDataFormChart()} />
             </h1>
+            <Chart chartType="ColumnChart" width="100%" height="400px" data={generateDataFormChart()} />   
         </div>
      );
 }

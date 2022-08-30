@@ -1,5 +1,7 @@
 import { Chart } from "react-google-charts"
 
+//Best selling action game in NorthAmerica by Sales
+
 const ActionTable = ({videogames}) => {
 
     function generateActionGraph(){
@@ -9,9 +11,9 @@ const ActionTable = ({videogames}) => {
 
         console.log('Filtered games by genre action', filteredActionGames)
 
-        let bestSellingFilteredGame = filteredActionGames.filter(game => game.northamericasales > 10)
+        let bestSellingFilteredGame = filteredActionGames.filter(game => game.northamericasales >= 2.77)
 
-        console.log (bestSellingFilteredGame)
+        console.log ('best selling action game' ,bestSellingFilteredGame)
 
         let actiongames = bestSellingFilteredGame.map(game =>{
             return [game.name, game.northamericasales]

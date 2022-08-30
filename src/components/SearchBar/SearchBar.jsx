@@ -8,6 +8,13 @@ const SearchBar = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        let filteredGame = props.game.filter((game)=>  {
+            if (game.name.toLowerCase().includes(searchBar.toLowerCase())){
+                return true;
+            
+    }})
+        props.displayGame(filteredGame)
+        setSearchBar('')
     }
     
 
