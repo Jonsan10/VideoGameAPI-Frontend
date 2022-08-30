@@ -23,7 +23,7 @@ const GameTable = ({videogames}) => {
 
         let platformArrays = distinctPlatform.map(platform => {
             
-            let allGamesForPlatform = filteredGame.filter(game => game.platform == platform);
+            let allGamesForPlatform = filteredGame.filter(game => game.platform === platform);
 
             let sum = 0;
             allGamesForPlatform.forEach((game)=>{

@@ -1,6 +1,6 @@
 import { Chart } from "react-google-charts"
 
-//Best selling action game in NorthAmerica by Sales
+//Best selling action game in NorthAmerica by Sales before 2015
 
 const ActionTable = ({videogames}) => {
 
@@ -21,7 +21,7 @@ const ActionTable = ({videogames}) => {
 
     
     const data = [
-        ["Year", "NA Sales", { role: "style" }],
+        ["Year", "NA Sales"],
         ...actiongames
 
   
