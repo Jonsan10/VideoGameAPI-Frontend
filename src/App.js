@@ -5,6 +5,7 @@ import SearchBar from './components/SearchBar/SearchBar';
 import ActionTable from './components/ActionTable/ActionTable';
 
 
+
 function App() {
 
   const [gameList, setGameList] = useState([])
