@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import GameTable from './components/GameTable/GameTable';
 import SearchBar from './components/SearchBar/SearchBar'; 
+import ActionTable from './components/ActionTable/ActionTable';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <div className="App">
         <GameTable videogames={gameList}/>
         <SearchBar videogames={gameList}/>
+        <ActionTable videogames={gameList}/>
   
       </div>
     );
